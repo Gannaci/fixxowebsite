@@ -1,3 +1,12 @@
-@import './utilities.scss';
-@import './Navbar';
-@import './Showcase';
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+//Cores
+@import "./cores/variables";
+@import "./cores/colors";
+@import "./cores/base";
+
+// Sections 
+@import "./sections/MainMenuSections";
+@import "./sections/FooterSection";
