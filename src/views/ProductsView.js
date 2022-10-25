@@ -4,6 +4,7 @@ import FooterSection from '../sections/FooterSection';
 
 
 const ProductsView = () => {
+  window.top.document.title ='Fixxo. | Products '
   return (
     <>
     <MainMenuSection />

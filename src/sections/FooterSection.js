@@ -11,7 +11,7 @@ const FooterSection = () => {
             <ExternalLinks link="https://google.com" icon="fa-brands fa-google"/>
             <ExternalLinks link="https://linkedin.com" icon="fa-brands fa-linkedin"/>
         </div>
-        <div class="copy-right">© 2022 Fixxo. All Rights Reserved</div>
+        <div className="copy-right">© 2022 Fixxo. All Rights Reserved</div>
     </footer>
   )
 }

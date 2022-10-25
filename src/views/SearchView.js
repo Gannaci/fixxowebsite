@@ -4,6 +4,7 @@ import FooterSection from '../sections/FooterSection';
 
 
 const SearchView = () => {
+  window.top.document.title ='Fixxo. | Search '
   return (
     <>
     <MainMenuSection />
