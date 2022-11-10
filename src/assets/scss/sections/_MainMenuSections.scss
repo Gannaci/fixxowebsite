@@ -1,10 +1,15 @@
 .main-menu {
+    background-color: $linear-gradient-light;
     display: grid;
     padding-top: 10px;
     padding-bottom: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "logo mainmenuicons"
                           "mainmenulinks mainmenulinks";
+    min-width: 100%;
+  min-height: 100%;
+  
+    
 
     .logo-type {
         grid-area: logo;
@@ -94,11 +99,14 @@
         grid-template-areas: "logo mainmenulinks mainmenuicons";
         padding-top: 20px;
         padding-bottom: 20px;
+        
 
         .main-menu-links {
             grid-area: mainmenulinks;
             font-weight: 500;
             display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
         }
     }
