@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import imgleft from '../assets/images/showcase-left.svg';
-import imgright from '../assets/images/showcase-right.svg';
+import imgleft from '../assets/images/showcase-left.png';
+import imgright from '../assets/images/showcase-right.png';
 
 const SaleMenuSection = () => {
   return (
