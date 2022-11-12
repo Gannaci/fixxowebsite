@@ -1,10 +1,10 @@
 .contact-form {
     margin-bottom: 60px;
     
-
     .container {
         max-width: 1110px;
     }
+
         .comment-text {
             font-size: 30px;
             text-align: center;
@@ -77,8 +77,6 @@
     .contact-form {
         form {
             grid-template-columns: 1fr 1fr; 
-
-
         }
     }
 }

@@ -18,7 +18,9 @@ import NotFoundView from './views/NotFoundView';
 function App() {
   const [products, setProducts] = useState({
     all: [],
-    featuredProducts: []
+    featuredProducts: [],
+    flashSaleLeftProducts: [],
+    flashSaleRightProducts: []
   })
 
   useEffect(() => {

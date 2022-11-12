@@ -51,15 +51,14 @@ const ContactFormSection = () => {
             setFailedSubmitted(true)
         }
 
-      
-    } else {
-        setSubmitted(false)  
-    }
+        } else {
+            setSubmitted(false)  
+        }
   }
 
 return (
     <section className="contact-form">
-        <div className="container">
+      <div className="container">
         {
           submitted ? (
           <div className="alert alert-success text-center mb-5" role="alert">
@@ -67,34 +66,36 @@ return (
             <p>We will contact you as soon as possible.</p>
             </div>  ) : (<></>)
         }
+
         {
           failedsubmitted ? (
-          <div className="alert alert-danger text-center mb-5" role="alert">
-            <h3>We could not send</h3> 
-            <p>Please try again</p>
-            </div>  ) : (<></>)
+          < div className="alert alert-danger text-center mb-5" role="alert">
+              <h3>We could not send</h3> 
+              <p>Please try again</p>
+          </div>  ) : (<></>)
         }
-                <h2>Come in Contact with Us</h2>
-                <form onSubmit={handleSubmit} noValidate>
-                <div>
-                    <input id="name" type="text" className={(errors.name ? 'error': '')} placeholder="Your Name" value={name} onChange={handleChange}/>
-                    <div className="errorMessage">{errors.name}</div>
-                </div>
-                <div>
-                    <input id="email" type="email" className={(errors.email ? 'error': '')} placeholder="Your Mail" value={email} onChange={handleChange}/>
-                    <div className="errorMessage">{errors.email}</div>
-                </div>
-                <div className="textarea">
-                    <textarea id="comments" className={(errors.comments ? 'error': '')} style={(errors.comments ? {border: '1px solid #FF7373'}: {})} placeholder="Comments"  value={comments} onChange={handleChange}></textarea>
-                    <div className="errorMessage">{errors.comments}</div>
-                </div>
-                <div className="btn-form">
-                    <button type="submit" className="btn-theme">Post Comment</button>
-                    <span className="corner-left"></span>
-                    <span className="corner-right"></span>
-                </div>
-                </form>
-        </div>
+
+        <h2>Come in Contact with Us</h2>
+        <form onSubmit={handleSubmit} noValidate>
+          <div>
+              <input id="name" type="text" className={(errors.name ? 'error': '')} placeholder="Your Name" value={name} onChange={handleChange}/>
+              <div className="errorMessage">{errors.name}</div>
+          </div>
+          <div>
+              <input id="email" type="email" className={(errors.email ? 'error': '')} placeholder="Your Mail" value={email} onChange={handleChange}/>
+              <div className="errorMessage">{errors.email}</div>
+          </div>
+          <div className="textarea">
+              <textarea id="comments" className={(errors.comments ? 'error': '')} style={(errors.comments ? {border: '1px solid #FF7373'}: {})} placeholder="Comments"  value={comments} onChange={handleChange}></textarea>
+              <div className="errorMessage">{errors.comments}</div>
+          </div>
+          <div className="btn-form">
+              <button type="submit" className="btn-theme">Post Comment</button>
+              <span className="corner-left"></span>
+              <span className="corner-right"></span>
+          </div>
+        </form>
+      </div>
     </section>
     )
 }

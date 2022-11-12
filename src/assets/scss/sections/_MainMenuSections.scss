@@ -7,9 +7,7 @@
     grid-template-areas: "logo mainmenuicons"
                           "mainmenulinks mainmenulinks";
     min-width: 100%;
-  min-height: 100%;
-  
-    
+    min-height: 100%;
 
     .logo-type {
         grid-area: logo;
@@ -28,7 +26,6 @@
         grid-area: mainmenulinks;
         display: none;
         font-weight: 400;
-
 
         .main-menu-link {
             color: $color-dark;
@@ -99,7 +96,6 @@
         grid-template-areas: "logo mainmenulinks mainmenuicons";
         padding-top: 20px;
         padding-bottom: 20px;
-        
 
         .main-menu-links {
             grid-area: mainmenulinks;

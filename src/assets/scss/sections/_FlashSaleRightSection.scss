@@ -53,6 +53,7 @@
                         }
                     }
                 }
+
             .btn-card-theme {
                 position: absolute;
                 bottom: 0;
@@ -63,6 +64,7 @@
                 height: 50px;       
             }
         }
+
             .card-body {
                 text-align: start;
                 padding: 0;
@@ -123,6 +125,7 @@
             color: $color-white;
             margin-bottom: 30px;
         }
+
         .btn-flash {
             color: black;
             width: 35%;
@@ -132,10 +135,12 @@
             &:hover {
                 background-color: $color-theme;
             }
+
             .left {
                 border-left: 1px solid $color-dark;
                 border-top: 1px solid $color-dark;
             }
+            
             .right {
                 border-bottom: 1px solid $color-dark;
                 border-right: 1px solid $color-dark;
